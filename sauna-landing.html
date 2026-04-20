@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moderní jezerní sauna na Matyldě</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        --bg: #0f1113;
+        --bg-soft: #161a1d;
+        --panel: #1c2125;
+        --line: #2b3238;
+        --wood: #8c6a49;
+        --wood-soft: #b08a62;
+        --text: #e8ecef;
+        --muted: #b0b8be;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background: radial-gradient(circle at 20% 0%, #252d33 0%, var(--bg) 38%), var(--bg);
+        color: var(--text);
+        font-family: "Segoe UI", "SF Pro Display", "Helvetica Neue", sans-serif;
+      }
+
+      .glass {
+        background: linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+        backdrop-filter: blur(6px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .panel {
+        background: linear-gradient(180deg, #1a1f23 0%, #14181b 100%);
+        border: 1px solid var(--line);
+      }
+
+      .accent {
+        color: var(--wood-soft);
+      }
+
+      .section-title {
+        letter-spacing: 0.04em;
+      }
+
+      .fade-up {
+        opacity: 0;
+        transform: translateY(14px);
+        animation: fadeUp 0.8s ease forwards;
+      }
+
+      .fade-up-delay-1 {
+        animation-delay: 0.15s;
+      }
+
+      .fade-up-delay-2 {
+        animation-delay: 0.28s;
+      }
+
+      .fade-up-delay-3 {
+        animation-delay: 0.4s;
+      }
+
+      @keyframes fadeUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(18px);
+        transition: all 0.7s ease;
+      }
+
+      .reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+  <body class="min-h-screen">
+    <main class="mx-auto max-w-6xl px-5 py-10 md:px-8 md:py-14 lg:py-16">
+      <section class="mb-12 md:mb-16">
+        <div class="glass rounded-3xl p-6 md:p-10">
+          <div class="grid items-center gap-8 lg:grid-cols-2 lg:gap-10">
+            <div>
+              <p class="fade-up mb-4 inline-flex rounded-full border border-[#4a5560] bg-black/30 px-3 py-1 text-xs tracking-[0.12em] text-slate-300 uppercase">
+                Investiční koncept pro Matyldu
+              </p>
+              <h1 class="fade-up fade-up-delay-1 text-3xl font-semibold leading-tight md:text-5xl">
+                Moderní jezerní sauna na Matyldě
+              </h1>
+              <p class="fade-up fade-up-delay-2 mt-5 max-w-xl text-sm leading-relaxed text-slate-300 md:text-base">
+                Prémiový a provozně jednoduchý koncept samoobslužné sauny z lodního kontejneru s výhledem na vodu.
+              </p>
+              <ul class="fade-up fade-up-delay-3 mt-6 space-y-3 text-sm text-slate-200 md:text-base">
+                <li class="flex items-start gap-3"><span class="accent mt-1">●</span><span>Atraktivní a smysluplné využití pozemku</span></li>
+                <li class="flex items-start gap-3"><span class="accent mt-1">●</span><span>Moderní samoobslužný provoz s nízkými náklady</span></li>
+                <li class="flex items-start gap-3"><span class="accent mt-1">●</span><span>Možnost pravidelného výnosu pro majitele pozemku</span></li>
+              </ul>
+            </div>
+
+            <figure class="fade-up fade-up-delay-2 overflow-hidden rounded-2xl border border-[#3b434a] bg-black/30">
+              <img
+                src="./sauna-matylda.png"
+                alt="Vizualizace moderní kontejnerové sauny u jezera"
+                class="h-full w-full object-cover transition duration-700 hover:scale-[1.03]"
+              />
+              <figcaption class="border-t border-[#3b434a] bg-black/45 px-4 py-3 text-xs text-slate-300">
+                Návrh: větší kontejnerová sauna, dřevo + černý kov, prosklení směrem k jezeru, uzavřenější strana k příjezdové cestě.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="reveal mb-8 grid gap-4 md:mb-12 md:grid-cols-2">
+        <article class="panel rounded-2xl p-5 md:p-6">
+          <h2 class="section-title mb-3 text-xl font-semibold md:text-2xl">Co je koncept</h2>
+          <p class="mb-4 text-sm leading-relaxed text-slate-300 md:text-base">
+            Moderní samoobslužná sauna u vody jako designový, funkční a ekonomicky smysluplný projekt.
+          </p>
+          <div class="grid gap-3 text-sm text-slate-200">
+            <p>Provozní doba například <span class="accent">6:00-24:00</span></p>
+            <p>Cena orientačně <span class="accent">200 Kč / hodina</span></p>
+            <p>Omezená kapacita pro komfort a kontrolu</p>
+            <p>Digitální vstup a vzdálená správa</p>
+            <p>Nízká potřeba personálu</p>
+          </div>
+        </article>
+
+        <article class="panel rounded-2xl p-5 md:p-6">
+          <h3 class="section-title mb-3 text-xl font-semibold md:text-2xl">Finální model provozu</h3>
+          <p class="text-sm leading-relaxed text-slate-300 md:text-base">Konečné nastavení vybereme podle ekonomiky, komfortu návštěvníků a dlouhodobé udržitelnosti:</p>
+          <ul class="mt-4 space-y-3 text-sm text-slate-200">
+            <li>Rezervační systém pro soukromé skupiny</li>
+            <li>Průběžný vstup pro jednotlivce</li>
+            <li>Kombinace obou variant</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="reveal mb-8 md:mb-12">
+        <div class="panel rounded-2xl p-5 md:p-6">
+          <h2 class="section-title mb-4 text-xl font-semibold md:text-2xl">Proč to dává smysl právě tady</h2>
+          <div class="grid gap-3 text-sm text-slate-200 md:grid-cols-2 md:text-base">
+            <p>Matylda má silný potenciál pro rekreační a volnočasové využití.</p>
+            <p>Sauna u vody přirozeně zvyšuje atraktivitu místa.</p>
+            <p>Jde o klidný a kultivovaný provoz, ne hlučný koncept.</p>
+            <p>Projekt může fungovat celoročně a přinášet dlouhodobou hodnotu.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="reveal mb-8 md:mb-12">
+        <div class="grid gap-4 md:grid-cols-2">
+          <article class="panel rounded-2xl p-5 md:p-6">
+            <h2 class="section-title mb-4 text-xl font-semibold md:text-2xl">Proč to realizovat s námi</h2>
+            <p class="mb-4 text-sm text-slate-300 md:text-base">Majitel si může projekt vybudovat sám, ale musí řešit celý řetězec:</p>
+            <div class="grid grid-cols-2 gap-2 text-sm text-slate-200">
+              <span>Návrh konceptu</span><span>Realizaci</span><span>Technologie</span><span>Provoz</span><span>Rezervace</span><span>Servis</span><span class="col-span-2">Marketing</span>
+            </div>
+          </article>
+          <article class="panel rounded-2xl p-5 md:p-6">
+            <h3 class="section-title mb-4 text-xl font-semibold md:text-2xl">Co přinášíme my</h3>
+            <ul class="space-y-2 text-sm text-slate-200 md:text-base">
+              <li>Hotový nápad a provozní model</li>
+              <li>Rychlost realizace</li>
+              <li>Převzetí každodenní provozní starosti</li>
+              <li>Motivaci projekt aktivně rozvíjet</li>
+            </ul>
+            <p class="mt-5 text-sm font-medium leading-relaxed text-slate-100 md:text-base">
+              Majitel tak může získat výnos z atraktivního projektu bez nutnosti celý koncept sám budovat a řídit.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="reveal mb-8 md:mb-12">
+        <div class="panel rounded-2xl p-5 md:p-6">
+          <h2 class="section-title mb-4 text-xl font-semibold md:text-2xl">Varianty spolupráce</h2>
+          <div class="grid gap-3 md:grid-cols-3">
+            <div class="rounded-xl border border-[#3b434a] bg-black/25 p-4 text-sm text-slate-200">Fixní nájem</div>
+            <div class="rounded-xl border border-[#3b434a] bg-black/25 p-4 text-sm text-slate-200">Podíl z obratu</div>
+            <div class="rounded-xl border border-[#3b434a] bg-black/25 p-4 text-sm text-slate-200">Kombinace fixního nájmu a podílu z obratu</div>
+          </div>
+          <p class="mt-4 text-sm leading-relaxed text-slate-300 md:text-base">
+            Konkrétní model je věcí dohody. Cílem je najít variantu výhodnou pro obě strany.
+          </p>
+        </div>
+      </section>
+
+      <section class="reveal mb-10 md:mb-14">
+        <div class="panel rounded-2xl p-5 md:p-6">
+          <h2 class="section-title mb-4 text-xl font-semibold md:text-2xl">Provoz a kontrola</h2>
+          <div class="grid gap-3 text-sm text-slate-200 md:grid-cols-2 md:text-base">
+            <p>Omezený počet osob</p>
+            <p>Kontrola kapacity přes čidla, smart systém nebo AI</p>
+            <p>Digitální přístup</p>
+            <p>Vzdálený dohled</p>
+            <p>Pravidelný úklid a servis</p>
+            <p>Důraz na pořádek, bezpečnost a klidný režim</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="reveal">
+        <div class="rounded-3xl border border-[#4a5560] bg-gradient-to-r from-[#1a1f23] to-[#13171b] p-6 text-center md:p-10">
+          <p class="mx-auto max-w-3xl text-base leading-relaxed text-slate-200 md:text-xl">
+            Nejde jen o nápad, ale o realistický projekt, který může dobře vypadat, fungovat dlouhodobě a přinášet hodnotu místu i majiteli pozemku.
+          </p>
+          <a
+            href="#"
+            class="mt-6 inline-flex rounded-full border border-[#786148] bg-[#8c6a49] px-6 py-3 text-sm font-medium text-white transition duration-300 hover:translate-y-[-1px] hover:bg-[#9d7650]"
+          >
+            Pojďme probrat možnosti spolupráce
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) entry.target.classList.add("visible");
+          });
+        },
+        { threshold: 0.12 }
+      );
+
+      document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>
